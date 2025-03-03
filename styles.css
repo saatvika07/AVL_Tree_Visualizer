@@ -1,0 +1,96 @@
+body{
+    margin: 20px 40px 20px 40px;
+    background-color:  #f6efe7;
+    
+}
+
+
+#heading {
+    display: flex;           /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100px;           /* Needed to see vertical centering */
+}
+#container{
+    display: flex;           /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column;
+    align-items: center;
+    background-color:#c8dbd7;
+    padding: 20px;
+    width: 90%;                  /* Responsive width */
+    margin: 0 auto;              /* Center the container horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add a subtle shadow */
+    border-radius: 10px;  
+    
+}
+
+#controls {
+    background-color:#c8dbd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;
+    flex-wrap: wrap;    /* Allow wrapping on smaller screens */
+    width: 100%;        /* Make controls stretch to the container's width */
+    max-width: 600px;   /* Optional: Limit max width for larger screens */
+}
+
+#controls input {
+    width: 100%;        /* Make input field flexible */
+    max-width: 200px;   /* Keep it from stretching too much */
+    font-size: large;
+    border: none;
+    padding: 5px;
+    border-color: transparent;
+}
+
+#controls button {
+    flex: 1;            /* Allow buttons to grow equally */
+    min-width: 80px;    /* Ensure buttons don't get too small */
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#controls button:hover{
+    background-color: #f6efe7;
+}
+#controls button:active {
+    transform: scale(0.95);      
+    background-color: #dcd4cb;   
+}
+
+#treeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    min-height: 200px;
+    width: 100%;
+    border-radius: 10px;    
+}
+.node {
+    position: absolute; /* Position relative to container */
+    transform: translate(-50%, -50%); /* Center the node */
+    background: #6ab04c;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+    line-height: 40px;
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    transform-origin: 0 0;
+}
